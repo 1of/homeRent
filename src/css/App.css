@@ -1,0 +1,146 @@
+@import url('fonts.css');
+
+* {
+	box-sizing: border-box;
+
+}
+
+html {
+	font-size: 10px;
+background-image: url(../img/bg.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+body {
+	margin: 0;
+	color: #1a1a1a;
+	background-color: transparent !important;
+	font-size: 1.6rem;
+	font-family: Vidaloka, sans-serif !important ;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: PressStart, sans-serif !important;
+}
+h1 {
+	text-align: center;
+	text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
+}
+p {
+	font-size: 1em;
+}
+.inner-content {
+	max-width: 1460px;
+	margin: 0 auto;
+
+}
+
+.logo-img {
+	height: 50px;
+	animation: App-logo-spin infinite 5s linear;
+	will-change: transform;
+}
+
+@keyframes App-logo-spin {
+  	25% {
+		transform: rotate(0deg);
+	}
+	50% {
+		transform: translateY(-2px) translateX(0px) rotate(-100deg);
+	}
+	75% {
+		transform: translateY(2px) translateX(0px) rotate(100deg);
+	}
+}
+form.sendData{
+	background-color: rgba(255,255,255, 0.7);
+	border-radius: 10px;
+	padding: 5px;
+	margin: auto;
+	width: 500px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+form.sendData label {
+
+}
+form div {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 5px;
+}
+.modal-body {
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+}
+.searchList {
+	width: 35%;
+}
+form.sendData span {
+
+}
+
+.ticket {
+	background: white;
+	width: 450px;
+	height: auto;
+	-webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+.ticket img {
+	height: 150px;
+	-webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+.ticketNone {
+	display: none;
+}
+select {
+	width: 30%;
+	    background-color: lightgray;
+	    border: none;
+	    height: 30px;
+			padding-left: 10%;
+}
+
+@media print { /* Стиль для печати */
+    body {
+     font-family: Times, 'Times New Roman', serif; /* Шрифт с засечками */
+		 visibility: hidden;
+    }
+    h1, h2, p {
+     color: red; /* Черный цвет текста */
+    }
+		table {
+			font-size: 2.4em;
+		}
+		.sendData {
+			display: none;
+		}
+		.printBtn {
+			visibility: hidden;
+		}
+		.ticket {
+			font-family: Times, 'Times New Roman', serif;
+			margin-left: 100px;
+			width: 90%;
+			height: 50%;
+			visibility: visible;
+			position: absolute;
+	    left: 0;
+	    top: 0;
+		}
+		body:not(div.ticket) {
+			display: none;
+		}
+
+   }
